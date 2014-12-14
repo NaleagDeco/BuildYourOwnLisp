@@ -89,7 +89,7 @@ char* str;
 
 <pre><code>string  : /\"(\\\\.|[^\"])*\"/ ;</code></pre>
 
-<p>This looks complicated but makes a lot more sense when explained in parts. It reads like this. A string is a <code>"</code> character, followed by zero or more of either a backslash <code>\\</code> followed by any other character <code>.</code>, or anything that <em>isn't</em> a <code>"</code> character <code>[^\\"]</code>. Finally it ends with another <code>"</code> character.</p>
+<p>This looks complicated but makes a lot more sense when explained in parts. It reads like this. A string is a <code>"</code> character, followed by zero or more of either a backslash <code>\\</code> followed by any other character <code>.</code>, or anything that <em>isn't</em> a <code>"</code> character <code>[^\"]</code>. Finally it ends with another <code>"</code> character.</p>
 
 <p>We also need to add a case to deal with this in the <code>lval_read</code> function.</p>
 
